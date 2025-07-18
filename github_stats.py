@@ -385,11 +385,7 @@ Languages:
         """
         :return: GitHub user's name (e.g., Jacob Strieb)
         """
-        if self._name is not None:
-            return self._name
-        await self.get_stats()
-        assert self._name is not None
-        return self._name
+        return "bigbrainw"
 
     @property
     async def stargazers(self) -> int:
